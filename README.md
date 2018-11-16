@@ -2,7 +2,7 @@
 
 A brief tutorial on how to test React + Redux code using Jest + Enzyme.
 
-Refer to https://github.com/nmarrs/replenisher-task-app/blob/master/README.md for a guide to the sample application we will be writing a few tests for.
+Refer to [here](https://github.com/nmarrs/replenisher-task-app/blob/master/README.md) for a guide to the sample application we will be writing a few tests for.
 
 ## Table of Contents
 
