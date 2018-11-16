@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskCard renders correctly 1`] = `
+<div
+  className="card shadow font-title mt-3 TaskCard-card mx-auto"
+>
+  <a
+    onClick={[Function]}
+  >
+    <div
+      className="card-title mt-3"
+    >
+      <h5>
+        Unload merchandise
+      </h5>
+    </div>
+    <div
+      className="card-body"
+    >
+      <table
+        className="table table-hover"
+      >
+        <tbody>
+          <tr>
+            <th>
+              <i
+                className="fas fa-exclamation"
+              />
+               Priority Level (1-5)
+            </th>
+            <td>
+              3
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <i
+                className="far fa-clock"
+              />
+               Estimate (hours)
+            </th>
+            <td>
+              2
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </a>
+</div>
+`;

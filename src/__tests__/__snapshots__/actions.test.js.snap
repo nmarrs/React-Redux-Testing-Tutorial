@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions assignTasksToUser dispatches the correct action and payload 1`] = `
+Array [
+  Object {
+    "payload": Array [
+      Object {
+        "completionTime": "",
+        "currentStatus": "To Do",
+        "endTime": "",
+        "feedback": "",
+        "id": 1,
+        "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+        "priority": 3,
+        "rankWeight": 150,
+        "startTime": "",
+        "timeEstimate": 2,
+        "title": "Unload merchandise",
+      },
+    ],
+    "type": "ASSIGN_TASKS_TO_USER",
+  },
+]
+`;
+
+exports[`actions calculateTaskRankWeight calculates task rank weight as expected 1`] = `150`;
+
+exports[`actions calculateTaskRankWeight calculates task rank weight as expected 2`] = `10`;
+
+exports[`actions createTask dispatches the correct action and payload when admin view 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+    "type": "CREATE_TEMPLATE_TASK",
+  },
+]
+`;
+
+exports[`actions createTask dispatches the correct action and payload when not admin view 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+    "type": "CREATE_TASK",
+  },
+]
+`;
+
+exports[`actions editTask dispatches the correct action and payload when admin view 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+    "type": "EDIT_TEMPLATE_TASK",
+  },
+]
+`;
+
+exports[`actions editTask dispatches the correct action and payload when not admin view 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+    "type": "EDIT_TASK",
+  },
+]
+`;
+
+exports[`actions sortTasksByRank dispatches the correct action and payload 1`] = `
+Array [
+  Object {
+    "sortedTemplateTasks": Array [
+      Object {
+        "completionTime": "",
+        "currentStatus": "To Do",
+        "endTime": "",
+        "feedback": "",
+        "id": 1,
+        "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+        "priority": 3,
+        "rankWeight": 150,
+        "startTime": "",
+        "timeEstimate": 2,
+        "title": "Unload merchandise",
+      },
+    ],
+    "sortedUserTasks": Array [
+      Object {
+        "completionTime": "",
+        "currentStatus": "To Do",
+        "endTime": "",
+        "feedback": "",
+        "id": 1,
+        "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+        "priority": 3,
+        "rankWeight": 150,
+        "startTime": "",
+        "timeEstimate": 2,
+        "title": "Unload merchandise",
+      },
+      Object {
+        "completionTime": "",
+        "currentStatus": "To Do",
+        "endTime": "",
+        "feedback": "",
+        "id": 2,
+        "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+        "priority": 1,
+        "rankWeight": 10,
+        "startTime": "",
+        "timeEstimate": 10,
+        "title": "Stock shelves with unpacked items",
+      },
+    ],
+    "type": "SORT_TASKS_BY_RANK",
+  },
+]
+`;
+
+exports[`actions toggleCreateTaskModal dispatches the correct action and payload 1`] = `
+Array [
+  Object {
+    "payload": true,
+    "type": "TOGGLE_CREATE_TASK_MODAL",
+  },
+]
+`;
+
+exports[`actions toggleEditTaskModal dispatches the correct action and payload 1`] = `
+Array [
+  Object {
+    "payload": true,
+    "task": Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+    "type": "TOGGLE_EDIT_TASK_MODAL",
+  },
+]
+`;
+
+exports[`actions toggleIsAdminView dispatches the correct action and payload 1`] = `
+Array [
+  Object {
+    "type": "TOGGLE_IS_ADMIN_VIEW",
+  },
+]
+`;

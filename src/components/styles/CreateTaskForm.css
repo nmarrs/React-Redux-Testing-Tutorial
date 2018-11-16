@@ -1,0 +1,7 @@
+.CreateTaskForm-modal {
+  min-width: 350px;
+}
+
+.CreateTaskForm-textarea {
+  min-height: 100px;
+}

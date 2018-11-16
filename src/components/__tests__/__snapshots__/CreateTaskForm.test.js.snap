@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateTaskForm initially should have expected state 1`] = `
+Object {
+  "currentStatus": "To Do",
+  "feedback": "",
+  "notes": "",
+  "priority": "-",
+  "timeEstimate": "0",
+  "title": "",
+}
+`;
+
+exports[`CreateTaskForm renders correctly 1`] = `
+<div
+  className="CreateTaskForm-modal"
+>
+  <h4
+    className="m-3"
+  >
+    <i
+      className="far fa-plus-square"
+    />
+     Create New Task
+  </h4>
+  <form>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="taskTitle"
+      >
+        <i
+          className="fas fa-tag"
+        />
+         Title
+      </label>
+      <input
+        className="form-control"
+        defaultValue=""
+        id="taskTitleInput"
+        onChange={[Function]}
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="taskStatus"
+      >
+        <i
+          className="fas fa-bolt"
+        />
+         Status
+      </label>
+      <select
+        className="form-control"
+        defaultValue="To Do"
+        disabled={true}
+        id="taskStatusSelect"
+        onChange={[Function]}
+      >
+        <option>
+          To Do
+        </option>
+        <option>
+          In Progress
+        </option>
+        <option>
+          Finished
+        </option>
+      </select>
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="taskPriority"
+      >
+        <i
+          className="fas fa-exclamation"
+        />
+         Priority Level (1-5)
+      </label>
+      <select
+        className="form-control"
+        defaultValue="-"
+        id="taskPrioritySelect"
+        onChange={[Function]}
+      >
+        <option>
+          -
+        </option>
+        <option>
+          1
+        </option>
+        <option>
+          2
+        </option>
+        <option>
+          3
+        </option>
+        <option>
+          4
+        </option>
+        <option>
+          5
+        </option>
+      </select>
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="taskEstimate"
+      >
+        <i
+          className="far fa-clock"
+        />
+         Estimate (hours)
+      </label>
+      <input
+        className="form-control"
+        defaultValue="0"
+        id="taskEstimateInput"
+        min="0"
+        onChange={[Function]}
+        type="number"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="taskNotes"
+      >
+        <i
+          className="far fa-sticky-note"
+        />
+         Notes
+      </label>
+      <textarea
+        className="form-control CreateTaskForm-textarea"
+        defaultValue=""
+        id="taskNotesTextArea"
+        onChange={[Function]}
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="taskFeedback"
+      >
+        <i
+          className="far fa-comments"
+        />
+         Feedback
+      </label>
+      <textarea
+        className="form-control CreateTaskForm-textarea"
+        defaultValue=""
+        id="taskFeedbackTextArea"
+        onChange={[Function]}
+      />
+    </div>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+      type="submit"
+    >
+      <i
+        className="fas fa-check"
+      />
+       Submit
+    </button>
+  </form>
+</div>
+`;

@@ -1,0 +1,7 @@
+.EditTaskForm-modal {
+  min-width: 350px;
+}
+
+.EditTaskForm-textarea {
+  min-height: 100px;
+}

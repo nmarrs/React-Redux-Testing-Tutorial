@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserView renders correctly 1`] = `
+<div>
+  <h3
+    className="mt-3"
+  >
+    <i
+      className="fas fa-tasks"
+    />
+     Current User Tasks
+  </h3>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <TaskColumn
+        editTaskModalOpen={false}
+        isAdminView={true}
+        tasks={
+          Array [
+            Object {
+              "completionTime": "",
+              "currentStatus": "To Do",
+              "endTime": "",
+              "feedback": "",
+              "id": 1,
+              "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+              "priority": 3,
+              "rankWeight": 150,
+              "startTime": "",
+              "timeEstimate": 2,
+              "title": "Unload merchandise",
+            },
+          ]
+        }
+        title="To Do"
+        toggleEditTaskModal={[MockFunction]}
+      />
+      <TaskColumn
+        editTaskModalOpen={false}
+        isAdminView={true}
+        tasks={
+          Array [
+            Object {
+              "completionTime": "",
+              "currentStatus": "To Do",
+              "endTime": "",
+              "feedback": "",
+              "id": 2,
+              "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+              "priority": 1,
+              "rankWeight": 10,
+              "startTime": "",
+              "timeEstimate": 10,
+              "title": "Stock shelves with unpacked items",
+            },
+          ]
+        }
+        title="In Progress"
+        toggleEditTaskModal={[MockFunction]}
+      />
+      <TaskColumn
+        editTaskModalOpen={false}
+        isAdminView={true}
+        tasks={
+          Array [
+            Object {
+              "completionTime": "",
+              "currentStatus": "To Do",
+              "endTime": "",
+              "feedback": "",
+              "id": 3,
+              "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+              "priority": 5,
+              "rankWeight": 250,
+              "startTime": "",
+              "timeEstimate": 2,
+              "title": "Stock shelves with unpacked items",
+            },
+          ]
+        }
+        title="Finished"
+        toggleEditTaskModal={[MockFunction]}
+      />
+    </div>
+  </div>
+</div>
+`;

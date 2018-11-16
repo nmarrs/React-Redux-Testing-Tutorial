@@ -1,0 +1,524 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducer ASSIGN_TASKS_TO_USER is correct 1`] = `
+Object {
+  "createTaskModalOpen": false,
+  "currentTask": Object {},
+  "editTaskModalOpen": false,
+  "isAdminView": true,
+  "templateTasks": Array [
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 2,
+      "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+      "priority": 1,
+      "rankWeight": 10,
+      "startTime": "",
+      "timeEstimate": 10,
+      "title": "Stock shelves with unpacked items",
+    },
+  ],
+  "user": Object {
+    "tasks": Array [
+      Object {
+        "completionTime": "",
+        "currentStatus": "To Do",
+        "endTime": "",
+        "feedback": "",
+        "id": 1,
+        "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+        "priority": 3,
+        "rankWeight": 150,
+        "startTime": "",
+        "timeEstimate": 2,
+        "title": "Unload merchandise",
+      },
+    ],
+  },
+}
+`;
+
+exports[`reducer CREATE_TASK is correct 1`] = `
+Object {
+  "createTaskModalOpen": false,
+  "currentTask": Object {},
+  "editTaskModalOpen": false,
+  "isAdminView": true,
+  "templateTasks": Array [
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 2,
+      "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+      "priority": 1,
+      "rankWeight": 10,
+      "startTime": "",
+      "timeEstimate": 10,
+      "title": "Stock shelves with unpacked items",
+    },
+  ],
+  "user": Object {
+    "tasks": Array [
+      Object {
+        "completionTime": "",
+        "currentStatus": "To Do",
+        "endTime": "",
+        "feedback": "",
+        "id": 3,
+        "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+        "priority": 5,
+        "rankWeight": 250,
+        "startTime": "",
+        "timeEstimate": 2,
+        "title": "Stock shelves with unpacked items",
+      },
+    ],
+  },
+}
+`;
+
+exports[`reducer CREATE_TASK sorts correctly 1`] = `
+Object {
+  "createTaskModalOpen": false,
+  "currentTask": Object {},
+  "editTaskModalOpen": false,
+  "isAdminView": true,
+  "templateTasks": Array [
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 2,
+      "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+      "priority": 1,
+      "rankWeight": 10,
+      "startTime": "",
+      "timeEstimate": 10,
+      "title": "Stock shelves with unpacked items",
+    },
+  ],
+  "user": Object {
+    "tasks": Array [
+      Object {
+        "completionTime": "",
+        "currentStatus": "To Do",
+        "endTime": "",
+        "feedback": "",
+        "id": 3,
+        "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+        "priority": 5,
+        "rankWeight": 250,
+        "startTime": "",
+        "timeEstimate": 2,
+        "title": "Stock shelves with unpacked items",
+      },
+      Object {
+        "completionTime": "",
+        "currentStatus": "To Do",
+        "endTime": "",
+        "feedback": "",
+        "id": 1,
+        "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+        "priority": 3,
+        "rankWeight": 150,
+        "startTime": "",
+        "timeEstimate": 2,
+        "title": "Unload merchandise",
+      },
+    ],
+  },
+}
+`;
+
+exports[`reducer CREATE_TEMPLATE_TASK is correct 1`] = `
+Object {
+  "createTaskModalOpen": false,
+  "currentTask": Object {},
+  "editTaskModalOpen": false,
+  "isAdminView": true,
+  "templateTasks": Array [
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 3,
+      "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+      "priority": 5,
+      "rankWeight": 250,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Stock shelves with unpacked items",
+    },
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 2,
+      "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+      "priority": 1,
+      "rankWeight": 10,
+      "startTime": "",
+      "timeEstimate": 10,
+      "title": "Stock shelves with unpacked items",
+    },
+  ],
+  "user": Object {
+    "tasks": Array [],
+  },
+}
+`;
+
+exports[`reducer EDIT_TASK is correct 1`] = `
+Object {
+  "createTaskModalOpen": false,
+  "currentTask": Object {},
+  "editTaskModalOpen": false,
+  "isAdminView": true,
+  "templateTasks": Array [
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 2,
+      "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+      "priority": 1,
+      "rankWeight": 10,
+      "startTime": "",
+      "timeEstimate": 10,
+      "title": "Stock shelves with unpacked items",
+    },
+  ],
+  "user": Object {
+    "tasks": Array [
+      Object {
+        "completionTime": "",
+        "currentStatus": "To Do",
+        "endTime": "",
+        "feedback": "Some example feedback.",
+        "id": 1,
+        "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+        "priority": 3,
+        "rankWeight": 150,
+        "startTime": "",
+        "timeEstimate": 2,
+        "title": "Unload merchandise",
+      },
+    ],
+  },
+}
+`;
+
+exports[`reducer EDIT_TEMPLATE_TASK is correct 1`] = `
+Object {
+  "createTaskModalOpen": false,
+  "currentTask": Object {},
+  "editTaskModalOpen": false,
+  "isAdminView": true,
+  "templateTasks": Array [
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "Some example feedback.",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 2,
+      "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+      "priority": 1,
+      "rankWeight": 10,
+      "startTime": "",
+      "timeEstimate": 10,
+      "title": "Stock shelves with unpacked items",
+    },
+  ],
+  "user": Object {
+    "tasks": Array [],
+  },
+}
+`;
+
+exports[`reducer INITIAL_STATE is correct 1`] = `
+Object {
+  "createTaskModalOpen": false,
+  "currentTask": Object {},
+  "editTaskModalOpen": false,
+  "isAdminView": true,
+  "templateTasks": Array [
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 2,
+      "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+      "priority": 1,
+      "rankWeight": 10,
+      "startTime": "",
+      "timeEstimate": 10,
+      "title": "Stock shelves with unpacked items",
+    },
+  ],
+  "user": Object {
+    "tasks": Array [],
+  },
+}
+`;
+
+exports[`reducer SORT_TASKS_BY_RANK is correct 1`] = `
+Object {
+  "createTaskModalOpen": false,
+  "currentTask": Object {},
+  "editTaskModalOpen": false,
+  "isAdminView": true,
+  "templateTasks": Array [
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+  ],
+  "user": Object {
+    "tasks": Array [
+      Object {
+        "completionTime": "",
+        "currentStatus": "To Do",
+        "endTime": "",
+        "feedback": "",
+        "id": 3,
+        "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+        "priority": 5,
+        "rankWeight": 250,
+        "startTime": "",
+        "timeEstimate": 2,
+        "title": "Stock shelves with unpacked items",
+      },
+    ],
+  },
+}
+`;
+
+exports[`reducer TOGGLE_CREATE_TASK_MODAL is correct 1`] = `
+Object {
+  "createTaskModalOpen": true,
+  "currentTask": Object {},
+  "editTaskModalOpen": false,
+  "isAdminView": true,
+  "templateTasks": Array [
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 2,
+      "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+      "priority": 1,
+      "rankWeight": 10,
+      "startTime": "",
+      "timeEstimate": 10,
+      "title": "Stock shelves with unpacked items",
+    },
+  ],
+  "user": Object {
+    "tasks": Array [],
+  },
+}
+`;
+
+exports[`reducer TOGGLE_EDIT_TASK_MODAL is correct 1`] = `
+Object {
+  "createTaskModalOpen": false,
+  "currentTask": undefined,
+  "editTaskModalOpen": true,
+  "isAdminView": true,
+  "templateTasks": Array [
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 2,
+      "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+      "priority": 1,
+      "rankWeight": 10,
+      "startTime": "",
+      "timeEstimate": 10,
+      "title": "Stock shelves with unpacked items",
+    },
+  ],
+  "user": Object {
+    "tasks": Array [],
+  },
+}
+`;
+
+exports[`reducer TOGGLE_IS_ADMIN_VIEW is correct 1`] = `
+Object {
+  "createTaskModalOpen": false,
+  "currentTask": Object {},
+  "editTaskModalOpen": false,
+  "isAdminView": false,
+  "templateTasks": Array [
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 1,
+      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+      "priority": 3,
+      "rankWeight": 150,
+      "startTime": "",
+      "timeEstimate": 2,
+      "title": "Unload merchandise",
+    },
+    Object {
+      "completionTime": "",
+      "currentStatus": "To Do",
+      "endTime": "",
+      "feedback": "",
+      "id": 2,
+      "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+      "priority": 1,
+      "rankWeight": 10,
+      "startTime": "",
+      "timeEstimate": 10,
+      "title": "Stock shelves with unpacked items",
+    },
+  ],
+  "user": Object {
+    "tasks": Array [],
+  },
+}
+`;

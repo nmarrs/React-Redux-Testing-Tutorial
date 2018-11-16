@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdminView renders correctly 1`] = `
+<div>
+  <h3
+    className="mt-3"
+  >
+    <i
+      className="fas fa-tasks"
+    />
+     Template Tasks
+  </h3>
+  <TaskColumn
+    editTaskModalOpen={false}
+    isAdminView={true}
+    tasks={
+      Array [
+        Object {
+          "completionTime": "",
+          "currentStatus": "To Do",
+          "endTime": "",
+          "feedback": "",
+          "id": 1,
+          "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+          "priority": 3,
+          "rankWeight": 150,
+          "startTime": "",
+          "timeEstimate": 2,
+          "title": "Unload merchandise",
+        },
+        Object {
+          "completionTime": "",
+          "currentStatus": "To Do",
+          "endTime": "",
+          "feedback": "",
+          "id": 2,
+          "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+          "priority": 1,
+          "rankWeight": 10,
+          "startTime": "",
+          "timeEstimate": 10,
+          "title": "Stock shelves with unpacked items",
+        },
+      ]
+    }
+    title="Tasks"
+    toggleEditTaskModal={[MockFunction]}
+  />
+</div>
+`;

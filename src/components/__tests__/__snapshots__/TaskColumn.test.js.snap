@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskColumn renders correctly no tasks provided 1`] = `
+<div
+  className="card shadow font-title mt-3 mb-5 TaskColumn-card mx-auto"
+>
+  <div
+    className="card-title mt-3"
+  >
+    <h3>
+      Test
+       - 
+      0
+    </h3>
+  </div>
+  <div
+    className="card-body"
+  >
+    <div>
+      No tasks
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TaskColumn renders correctly tasks provided 1`] = `
+<div
+  className="card shadow font-title mt-3 mb-5 TaskColumn-card mx-auto"
+>
+  <div
+    className="card-title mt-3"
+  >
+    <h3>
+      Test
+       - 
+      3
+    </h3>
+  </div>
+  <div
+    className="card-body"
+  >
+    <div
+      key="0"
+    >
+      <TaskCard
+        task={
+          Object {
+            "completionTime": "",
+            "currentStatus": "To Do",
+            "endTime": "",
+            "feedback": "",
+            "id": 1,
+            "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
+            "priority": 3,
+            "rankWeight": 150,
+            "startTime": "",
+            "timeEstimate": 2,
+            "title": "Unload merchandise",
+          }
+        }
+        toggleEditTaskModal={[MockFunction]}
+      />
+    </div>
+    <div
+      key="1"
+    >
+      <TaskCard
+        task={
+          Object {
+            "completionTime": "",
+            "currentStatus": "To Do",
+            "endTime": "",
+            "feedback": "",
+            "id": 2,
+            "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+            "priority": 1,
+            "rankWeight": 10,
+            "startTime": "",
+            "timeEstimate": 10,
+            "title": "Stock shelves with unpacked items",
+          }
+        }
+        toggleEditTaskModal={[MockFunction]}
+      />
+    </div>
+    <div
+      key="2"
+    >
+      <TaskCard
+        task={
+          Object {
+            "completionTime": "",
+            "currentStatus": "To Do",
+            "endTime": "",
+            "feedback": "",
+            "id": 3,
+            "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
+            "priority": 5,
+            "rankWeight": 250,
+            "startTime": "",
+            "timeEstimate": 2,
+            "title": "Stock shelves with unpacked items",
+          }
+        }
+        toggleEditTaskModal={[MockFunction]}
+      />
+    </div>
+  </div>
+</div>
+`;
