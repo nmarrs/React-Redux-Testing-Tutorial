@@ -9,9 +9,11 @@ Refer to https://github.com/nmarrs/replenisher-task-app/blob/master/README.md fo
 - [Getting Started](#getting-started)
   - [Get Running Locally](#run-project-locally)
 - [Basic React Testing](#basic-react-testing)
-  - [What to Test?](#what-to-test?)
-  - [Let's write some tests!](#let's-write-some-tests!)
+  - [What to Test?](#what-to-test)
+  - [Let's write some tests!](#lets-write-some-tests)
 - [Basic Redux Testing](#basic-redux-testing)
+  - [Testing Redux Actions](#testing-redux-actions)
+  - [Testing Redux Reducers](#testing-redux-reducers)
 - [Resources](#resources)
 
 ## Getting Started
@@ -51,19 +53,19 @@ Before we start writing code, let's review some general guidelines for what's wo
 
 ### What to Test?
 
-** It must render **
+**It must render**
 At the very least, make sure the component renders without error. This verifies there are no JSX syntax errors, that all variables are defined, etc. This could be as simple as verifying that the rendered output is not null.
 
-** Test the output **
+**Test the output**
 One step above “it renders” is “it renders the correct thing.” Given a set of props, what output is expected? Does `Person` render its name and age, or does it render a name and “TODO: age coming in v2.1”?
 
-** Test the states **
+**Test the states**
 Every conditional should be accounted for. If the classNames are conditional (enabled/disabled, success/warning/error, etc), make sure to test that the className-deciding logic is working right. Likewise for conditionally-rendered children: if a `Logout` button is only visible when the user is logged in, for instance, make sure to test for that.
 
-** Test the events **
+**Test the events**
 If the component can be interacted with (an `input` or `button` with an `onClick` or `onChange` or `onAnything`), test that the events work as expected and call the specified functions with the correct arguments (including binding `this`, if it matters).
 
-** Test the edge cases **
+**Test the edge cases**
 Anything that operates on an array could have boundary cases — an empty array, an array with 1 element, a paginated list that should truncate at 25 items, and so on. Try out every edge case you can think of, and make sure they all work correctly.
 
 ### Let's Write Some Tests!
@@ -159,7 +161,7 @@ describe("CreateTaskForm", () => {
 
 Now let's actually write some tests!
 
-** It must render **
+**It must render**
 First, we want to make sure our component renders. Add the following test after your `afterEach()` function.
 
 ```
@@ -170,7 +172,7 @@ it("should exist", () => {
 
 Once again, we define an individual unit test in Jest via the `it()` function. This test very simply takes in the wrapper object we created via the `beforeEach()` setup function and makes sure it is a defined object. The `expect()` method
 
-** Test the output **
+**Test the output**
 Easy! Now let's move onto testing the output of the component. This is actually easy as well!
 
 ```
@@ -183,7 +185,7 @@ You noticed that we are calling `.toMatchSnapshot()` method to verify our compon
 
 A typical snapshot test case for an app renders a UI component, takes a screenshot, then compares it to a reference image stored alongside the test. The test will fail if the two images do not match: either the change is unexpected, or the screenshot needs to be updated to the new version of the UI component. To learn more about snapshots, see [Snapshot Testing](https://jestjs.io/docs/en/snapshot-testing)
 
-** Test the states **
+**Test the states**
 To test the state of our component we will rely on snapshot testing again.
 
 ```
@@ -194,7 +196,7 @@ it("initially should have expected state", () => {
 
 Notice we can access our component's state by calling `wrapper.state()`. That's pretty neat!
 
-** Test the events **
+**Test the events**
 Our component has multiple events handling the form input change. Whenever we have a group of similarly related unit tests we can wrap them into a `describe()` block!
 
 We will be adding one example test for the handling the title input change and a few tests for handling submitting our form.
