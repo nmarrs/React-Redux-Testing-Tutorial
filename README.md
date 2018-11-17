@@ -349,7 +349,7 @@ describe("CreateTaskForm", () => {
       expect(wrapper.state().priority).toEqual("3");
     });
 
-    it("handleFeedbackInputChange", () => {
+    it("handleNotesInputChange", () => {
       let testEvent = {
         target: {
           value: "Test Notes"
@@ -409,7 +409,7 @@ describe("CreateTaskForm", () => {
 
 This wraps up the basic React testing part of the tutorial. Now onto Redux!
 
-## Basic React Testing
+## Basic Redux Testing
 
 Ok so this will be super brief. Basically you want to test both Redux reducers and actions. It is general best practice not to worry about doing integration testing with React + Redux as the libraries themselves handle that effectively.
 

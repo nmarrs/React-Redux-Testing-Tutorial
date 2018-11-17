@@ -403,46 +403,6 @@ Object {
 }
 `;
 
-exports[`reducer TOGGLE_CREATE_TASK_MODAL is correct 1`] = `
-Object {
-  "createTaskModalOpen": true,
-  "currentTask": Object {},
-  "editTaskModalOpen": false,
-  "isAdminView": true,
-  "templateTasks": Array [
-    Object {
-      "completionTime": "",
-      "currentStatus": "To Do",
-      "endTime": "",
-      "feedback": "",
-      "id": 1,
-      "notes": "Unload merchandise from the bay door. Driver usually comes by at 6 am sharp.",
-      "priority": 3,
-      "rankWeight": 150,
-      "startTime": "",
-      "timeEstimate": 2,
-      "title": "Unload merchandise",
-    },
-    Object {
-      "completionTime": "",
-      "currentStatus": "To Do",
-      "endTime": "",
-      "feedback": "",
-      "id": 2,
-      "notes": "Take merchandise items and stock shelves with them. Be sure to place items in correct areas.",
-      "priority": 1,
-      "rankWeight": 10,
-      "startTime": "",
-      "timeEstimate": 10,
-      "title": "Stock shelves with unpacked items",
-    },
-  ],
-  "user": Object {
-    "tasks": Array [],
-  },
-}
-`;
-
 exports[`reducer TOGGLE_EDIT_TASK_MODAL is correct 1`] = `
 Object {
   "createTaskModalOpen": false,

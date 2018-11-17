@@ -10,20 +10,19 @@ describe("reducer", () => {
     });
   });
 
-  describe("TOGGLE_CREATE_TASK_MODAL", () => {
+  // INSERT TEST FOR `TOGGLE_CREATE_TASK_MODAL` HERE!!
+
+  describe("TOGGLE_EDIT_TASK_MODAL", () => {
     it("is correct", () => {
-      let showCreateTaskModal = true;
+      let showEditTaskModal = true;
       const action = {
-        type: "TOGGLE_CREATE_TASK_MODAL",
-        payload: showCreateTaskModal,
-        task: testTask
+        type: "TOGGLE_EDIT_TASK_MODAL",
+        payload: showEditTaskModal
       };
 
       expect(rootReducer(undefined, action)).toMatchSnapshot();
     });
   });
-
-  // INSERT TEST FOR `TOGGLE_EDIT_TASK_MODAL` HERE!!
 
   describe("TOGGLE_IS_ADMIN_VIEW", () => {
     it("is correct", () => {

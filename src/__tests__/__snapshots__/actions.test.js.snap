@@ -162,15 +162,6 @@ Array [
 ]
 `;
 
-exports[`actions toggleCreateTaskModal dispatches the correct action and payload 1`] = `
-Array [
-  Object {
-    "payload": true,
-    "type": "TOGGLE_CREATE_TASK_MODAL",
-  },
-]
-`;
-
 exports[`actions toggleEditTaskModal dispatches the correct action and payload 1`] = `
 Array [
   Object {
